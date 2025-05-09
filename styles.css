@@ -5,9 +5,9 @@ body {
 
 #menu-toggle span {
     display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
+    width: 32px;
+    height: 4px;
+    margin: 7px auto;
     background-color: #334155;
     transition: all 0.3s ease-in-out;
     border-radius: 3px;
@@ -142,4 +142,25 @@ select:focus {
 .hero-image-container > * {
     position: relative; /* Ensure text is above overlay */
     z-index: 3;
+}
+
+/* Improve button contrast */
+.bg-orange-500, .hover\:bg-orange-600:hover {
+    color: #fff;
+}
+.text-red-600 {
+    color: #d90429 !important;
+}
+
+/* Add aria-live region for form feedback */
+[aria-live] {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.custom-shadow {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
 }
