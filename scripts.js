@@ -105,6 +105,13 @@ animatedSections.forEach(section => {
 window.addEventListener('scroll', setActiveLink);
 document.addEventListener('DOMContentLoaded', setActiveLink);
 
+document.addEventListener('DOMContentLoaded', function() {
+    document.body.style.opacity = '0';
+    setTimeout(function() {
+        document.body.style.opacity = '1';
+    }, 100);
+});
+
 function handleFormSubmit(form, statusElement) {
     if (!form.checkValidity()) {
         statusElement.textContent = 'Please fill in all required fields.';

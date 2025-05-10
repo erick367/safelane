@@ -1,6 +1,7 @@
 body {
     font-family: 'Inter', sans-serif;
     color: #334155;
+    transition: opacity 0.3s ease-in-out;
 }
 
 #menu-toggle span {
@@ -163,4 +164,52 @@ select:focus {
 
 .custom-shadow {
   box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+
+.nav-link.active {
+  color: #0ea5e9; /* sky-600 */
+  border-bottom: 2px solid #f97316; /* orange-500 */
+  background: rgba(14, 165, 233, 0.07); /* subtle highlight */
+}
+
+.google-logo {
+  font-family: 'Product Sans', Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  display: inline-block;
+}
+.google-g { color: #4285F4; }
+.google-o1 { color: #EA4335; }
+.google-o2 { color: #FBBC05; }
+.google-l { color: #34A853; }
+.google-e { color: #EA4335; }
+
+.learner-logo-fa {
+  position: relative;
+  display: inline-block;
+  width: 1.7em;
+  height: 1.7em;
+  vertical-align: middle;
+  margin: 0 0.2em;
+}
+.learner-logo-fa .fa-square {
+  color: #e0f7fa;
+  font-size: 1.7em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: rotate(15deg);
+}
+.learner-logo-fa .learner-l {
+  color: #e53935;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  font-size: 1.1em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(15deg);
+  z-index: 2;
+  letter-spacing: -0.05em;
 }
